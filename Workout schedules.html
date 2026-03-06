@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNex - Workout Schedules</title>
+    <link href="w_style.css" rel="stylesheet">
+</head>
+<body>
+
+            <header>
+        <nav class="navbar">
+            <div class="logo"><img src="logo.png" width="90" height="20"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="Workout schedules.html">WORKOUT SCHEDULE</a></li>
+                <li><a href="Meal plans.html">MEAL PLANS</a></li>
+                <li><a href="membership.html">MEMBERSHIPS</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+            <a href="login.html" class="login-btn">LOGIN / SIGN UP</a>
+        </nav>
+    </header>
+	
+	
+	
+	
+	
+
+    <section class="hero">
+        <div class="hero-text-bg bebas">
+            <div class="hero-title-1">WORKOUT</div>
+            <div class="hero-title-2">SCHEDULES</div>
+        </div>
+        <img src="New folder/3.png" alt="Muscular Man" class="hero-image" style="mask-image: linear-gradient(to top, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); object-fit: cover; object-position: top;"> </section>
+
+    <section class="bmi-section">
+        <div class="container">
+            <h2 class="section-title bebas">BMI CALCULATOR</h2>
+            
+            <div class="bmi-container">
+                <div class="bmi-form-wrapper">
+                    <h3 class="bmi-subtitle">LET'S CALCULATE YOUR BMI</h3>
+                    <div class="bmi-form">
+                        <input type="text" id="height" placeholder="Height / cm" class="bmi-input">
+                        <input type="text" id="weight" placeholder="Weight / kg" class="bmi-input">
+                        <input type="text" placeholder="Age" class="bmi-input">
+                        <input type="text" placeholder="Sex" class="bmi-input">
+                    </div>
+                    <button class="btn" onclick="calculateBMI()">CALCULATE</button>
+                </div>
+
+                <div class="bmi-center">
+                    <div class="vertical-line"></div>
+                    <div class="bmi-circle" id="bmiResult">00.0</div>
+                    <div class="arrow-down"></div>
+                </div>
+
+                <div class="bmi-table-wrapper">
+                    <div class="table-inner">
+                        <h3 class="bmi-subtitle">BMI CALCULATOR CHART</h3>
+                        <table class="bmi-table">
+                            <thead>
+                                <tr>
+                                    <th>BMI</th>
+                                    <th>WEIGHT STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Below 18.5</td>
+                                    <td>Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td>18.5 - 24.9</td>
+                                    <td>Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td>25.0 - 29.9</td>
+                                    <td>Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td>30.0 - and Above</td>
+                                    <td>Obese</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bmi-result-area">
+                <div class="result-header">ACCORDING TO YOUR BMI VALUE,</div>
+                <div class="result-box" id="bmiStatus"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedules">
+        <div class="container">
+            <h2 class="section-title bebas" style="margin-bottom: 20px;">WORKOUT SCHEDULES</h2>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title bebas">UNDERWEIGHT</h3>
+                        <p class="card-bmi">(BMI < 18.5)</p>
+                        <p class="card-goal">Muscle Gain & Strength Building</p>
+                    </div>
+                    
+                    <div class="card-focus">
+                        <h4>FOCUS:</h4>
+                        <ul>
+                            <li>Progressive strength training</li>
+                            <li>Moderate cardio</li>
+                            <li>High-calorie nutrition support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-divider"></div>
+                    
+                    <div class="schedule-title">WEEKLY SCHEDULE</div>
+                    <ul class="schedule-list">
+                        <li><span class="day-label">• MON</span> : Upper Body Strength</li>
+                        <li><span class="day-label">• TUE</span> : Light Cardio + Core</li>
+                        <li><span class="day-label">• WED</span> : Lower Body Strength</li>
+                        <li><span class="day-label">• THU</span> : Rest / Mobility Training</li>
+                        <li><span class="day-label">• FRI</span> : Full Body Resistance Training</li>
+                        <li><span class="day-label">• SAT</span> : Functional Strength + Core</li>
+                        <li><span class="day-label">• SUN</span> : Rest</li>
+                    </ul>
+                    
+                    <button class="btn card-btn">GUIDE ME</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title bebas">NORMAL WEIGHT</h3>
+                        <p class="card-bmi">(BMI 18.5 - 24.9)</p>
+                        <p class="card-goal">Maintain Fitness & Improve Performance</p>
+                    </div>
+                    
+                    <div class="card-focus">
+                        <h4>FOCUS:</h4>
+                        <ul>
+                            <li>Balanced strength + cardio</li>
+                            <li>Flexibility training</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-divider"></div>
+                    
+                    <div class="schedule-title">WEEKLY SCHEDULE</div>
+                    <ul class="schedule-list">
+                        <li><span class="day-label">• MON</span> : Strength Training (Upper Body)</li>
+                        <li><span class="day-label">• TUE</span> : HIIT Cardio</li>
+                        <li><span class="day-label">• WED</span> : Lower Body Training</li>
+                        <li><span class="day-label">• THU</span> : Rest / Mobility Training</li>
+                        <li><span class="day-label">• FRI</span> : Full Body Resistance Training</li>
+                        <li><span class="day-label">• SAT</span> : Functional Strength + Core</li>
+                        <li><span class="day-label">• SUN</span> : Rest</li>
+                    </ul>
+                    
+                    <button class="btn card-btn">GUIDE ME</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title bebas">OVERWEIGHT</h3>
+                        <p class="card-bmi">(BMI 25 - 29.9)</p>
+                        <p class="card-goal">Fat Loss & Endurance Improvement</p>
+                    </div>
+                    
+                    <div class="card-focus">
+                        <h4>FOCUS:</h4>
+                        <ul>
+                            <li>Higher cardio frequency</li>
+                            <li>Moderate resistance training</li>
+                            <li>Calorie deficit support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-divider"></div>
+                    
+                    <div class="schedule-title">WEEKLY SCHEDULE</div>
+                    <ul class="schedule-list">
+                        <li><span class="day-label">• MON</span> : Cardio (30-40 min)+Light Strength</li>
+                        <li><span class="day-label">• TUE</span> : Full Body Circuit Training</li>
+                        <li><span class="day-label">• WED</span> : Lower Body Strength</li>
+                        <li><span class="day-label">• THU</span> : Rest / Mobility Training</li>
+                        <li><span class="day-label">• FRI</span> : Full Body Resistance Training</li>
+                        <li><span class="day-label">• SAT</span> : Functional Strength + Core</li>
+                        <li><span class="day-label">• SUN</span> : Rest</li>
+                    </ul>
+                    
+                    <button class="btn card-btn">GUIDE ME</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number bebas">500+</div>
+                    <div class="stat-label">ACTIVE MEMBERS</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number bebas">150+</div>
+                    <div class="stat-label">TRANSFORMATIONS</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number bebas">5+</div>
+                    <div class="stat-label">YEARS EXPERIENCE</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number bebas">20+</div>
+                    <div class="stat-label">PROFESSIONAL PROGRAMS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="logo.png" alt="FitNex Logo" class="footer-logo-image" style="height: 60px; margin-bottom: 5px;"> <div class="footer-hours">
+                        <i class="far fa-clock"></i> OPEN HOURS: Monday to Friday (9 AM - 5 PM)
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">WORKOUT SCHEDULE</a></li>
+                        <li><a href="#">MEAL PLANS</a></li>
+                        <li><a href="#">MEMBERSHIPS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <ul class="contact-info">
+                        <li><i class="far fa-envelope"></i> info@fitnex.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Cranbourne, VIC, 3977</li>
+                        <li><i class="fas fa-phone-alt"></i> (03) 948 044</li>
+                    </ul>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div style="border-top: 1px solid var(--primary-orange); width: 80%; margin: 0 auto 15px auto;"></div>
+                Copyright © 2024 <span>FITNEX</span>. All right reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calculateBMI() {
+            var height = parseFloat(document.getElementById('height').value);
+            var weight = parseFloat(document.getElementById('weight').value);
+
+            if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+                alert("Please enter valid positive values for height and weight.");
+                return;
+            }
+
+            // Standard BMI formula: weight (kg) /^2
+            var heightInMeters = height / 100;
+            var bmi = weight / (heightInMeters * heightInMeters);
+            bmi = bmi.toFixed(1); // Round to one decimal place
+
+            document.getElementById('bmiResult').innerText = bmi;
+
+            var status = "";
+            if (bmi < 18.5) {
+                status = "You are in the Underweight range.";
+            } else if (bmi >= 18.5 && bmi < 25) {
+                status = "You are in the Healthy weight range.";
+            } else if (bmi >= 25 && bmi < 30) {
+                status = "You are in the Overweight range.";
+            } else {
+                status = "You are in the Obese range.";
+            }
+
+            document.getElementById('bmiStatus').innerText = status;
+        }
+    </script>
+
+</body>
+</html>
